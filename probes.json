@@ -1,0 +1,35 @@
+[
+{
+    "name":"Chamber Probe",
+    // Three different temperatures (in Kelvin), measured over a wide range
+    "calibration_temps":[278.71, 292.04, 345.93],
+    // Resistances in ohms
+    "calibration_resistances":[298000, 116300, 16830],
+    // R isthe resistance of the resistor you couple with the
+	// thermistor in the voltage drop circuit
+    "R":1.0e5,
+	// Array to hold adc values so we can do an average
+    "adc_vals":[],
+	// Define which channel this probe is connected to
+    "channel":1,
+	// temp holds the latest temp of the probe
+    "temp":null,
+	// temp_unit should be one of F, K, C (Fahrenheit, Kevlin, Celcius)
+	"temp_unit":"F"
+},
+{
+    "name":"Food Probe",
+    // Three different temperatures, measured over a wide range
+    "calibration_temps":[278.71, 292.04, 347.04],
+    // Resistances in ohms
+    "calibration_resistances":[273300, 115100, 14340],
+    // R isthe resistance of the resistor you couple with the
+	// thermistor in the voltage drop circuit
+    "R":1.0e5,
+    "adc_vals":[],
+	// Define which channel this probe is connected to
+    "channel":0,
+    "temp":null,
+	"temp_unit":"F"
+}
+]
